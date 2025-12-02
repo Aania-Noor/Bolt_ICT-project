@@ -1,0 +1,345 @@
+   body{
+            background-color: rgb(255, 255, 255);
+            margin: 0%;
+        }
+       /*LOGO AND NAVBAR STYLES */
+        #navbar{
+            display: flex;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+          justify-content: space-between;
+            height: 80px;
+            width: 100%;
+        }
+        
+        #logo{
+            
+            list-style: none;
+            display: block;
+           font-size: 20px;
+           justify-content: left;
+           
+        }
+        /*NAVIGATION LINKS STYLES */
+         #list{
+            
+            list-style: none;
+            display: flex;
+           align-items: center;
+           margin: 0%;
+padding: 0%;
+        }
+        #list li a{
+            display: block;
+            margin-left: 30px;
+            color: rgb(34, 34, 34);
+            text-decoration: none;
+            font-size: 20px;
+            align-items: center;
+            border-radius: 2px;
+            padding: 8px;
+        }
+        .a{
+align-items: center;
+        }
+        
+      #list li a.pages:hover{
+    
+   
+    box-shadow: 0px 0px 5px rgba(112, 112, 112, 0.2) ;
+    padding: 8px;
+      transform: translateY(-0.4px); 
+     transition: all 0.2s ease;   
+    
+   }
+   /*LOGIN AND MYCART STYLES */
+   #login{
+    border: none;
+    text-decoration: none;
+    color:rgb(34, 34, 34) ;
+    font-size: 15px;
+    display: flex;
+    align-self: flex-end;
+   }
+   #loginlink{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0%;
+    padding: 0%;
+    margin-right: 17px;
+   }
+    #loginlink a:hover{
+    
+      transform: translateY(-0.4px); 
+      transition: all 0.2s ease;   
+    }
+   #loginimg{
+    margin-right: 5px;
+    height: 15px;
+    width: 15px;
+
+     }
+     #mycartbutton a{
+      margin-left: 10px;
+      display: flex;
+             color: rgb(34, 34, 34);
+            text-decoration: none;
+            font-size: 15px;
+            align-items: center;
+            border-radius: 2px;
+            padding: 7px;
+            
+     }
+     #mycartbutton a:hover{
+          
+              transform: translateY(-0.4px); 
+      transition: all 0.2s ease; 
+            }
+            /*HOME IMAGE STYLES */
+   #homeimg{
+  margin: 0%;
+  display: block;
+
+   }
+    #home_img_text_div{
+     position: absolute;
+     top: 300px;
+     left: 5%;
+     text-align: left;
+    }
+    #home_img_text_div h2{
+     color: #004aad;
+     font-size: 30px;
+     margin: 0%;
+     padding: 0%;
+     text-shadow: 2px 2px 4px rgba(149, 149, 149, 0.7);
+    }
+   #home_img_text_div p{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    margin-top: 7px;
+    padding: 0%;
+    text-shadow: 1px 1px 2px rgba(149, 149, 149, 0.7);
+   }
+   /*services section styles */
+#servicessection{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 200px;
+   
+}
+.servicetype:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px); 
+    transition: all 0.3s ease;   
+}
+
+.servicetype{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    
+    
+}
+.services{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.serviceimg{
+    height: 100px;
+    width: 100px;
+    margin-right:10px;
+   
+}
+.big{
+    height: 130px;
+    width: 130px;
+    margin-right: 4px;
+}
+.servicetext{
+    display: flex;
+    flex-direction: column;
+     margin-left: 10px;
+}
+
+/* Different background colors for each service type */
+.servicetype:nth-child(1) {
+    background-color:#dbebfc; 
+    box-shadow: 0 6px 15px rgba(166, 166, 166, 0.5);
+   
+}
+
+.servicetype:nth-child(2) {
+    background-color: #e8f0f8; 
+    box-shadow: 0 6px 15px rgba(166, 166, 166, 0.5);
+}
+
+.servicetype:nth-child(3) {
+    background-color: #daedff  ; 
+    box-shadow: 0 6px 15px rgba(166, 166, 166, 0.5);}
+
+#serviceheading{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: rgb(40, 40, 40);
+    font-weight: bold;
+}
+
+/*reviews section styles */
+
+#reviewssection{
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+     display: flex;          
+  transition: transform 1s ease;
+  justify-content: center;
+  padding: 20px;
+  height: 250px;
+  overflow: hidden;
+}
+#reviewheading{
+    font-size: 27px; 
+    color: rgb(40, 40, 40);
+    font-weight: bold;  
+    margin-top: 90px;
+    text-align: center;
+}
+.reviewbox{
+       position: absolute;
+    left: 50%;
+    top: 30px;
+    
+    transform: translateX(-50%);
+    background-color: #e8f0f8;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    height: 200px;
+    width: 60%;
+    opacity: 0;
+  
+    transition: transform 1s ease, opacity 1s ease;
+     
+}
+.reviewbox.active{
+     transform: translateX(-50%); 
+    opacity: 1
+    
+}
+.reviewbox.slide-out {
+    transform: translateX(150%);
+    opacity: 0;
+}
+.reviewbox.slide-in {
+    transform: translateX(-150%);
+    opacity: 1;
+}
+
+
+.reviewtext{
+    font-size: 18px;
+    color: rgb(60, 60, 60);
+    margin-bottom: 10px;
+    margin-top: 75px;
+}
+.reviewername{
+    font-size: 16px;
+    color: rgb(80, 80, 80);
+    font-weight: bold;
+}
+
+   /*FOOTER STYLES */
+   #footerbackground{
+   height: 220px;
+    width: 100%};
+    footer{
+     
+    margin-top: 20px;
+    padding: 30px;
+    padding-bottom: 10px;
+     background-color: rgb(225, 220, 220);
+    
+    }
+    #footertext{
+        border:  2px solid transparent;
+        padding: 10px;
+        display: block;
+        border-radius: 25px;
+        box-shadow: 0px 2px 15px rgba(144, 144, 144, 0.1) ;
+        background-color: #f5f5f5;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 80px;
+        padding-right: 250px;
+        margin: auto;
+        box-shadow: 5px 5px 25px  rgb(181, 186, 190)  ;
+    }
+    
+    #footerlogo{
+     display: block;
+     align-items: left;
+     width: auto;
+     height: 80px;
+     display: flex;
+     margin-left: 100px;
+
+    }
+    #footeraboutus1{
+     color: rgb(66, 66, 66);
+     font-size: 25px;
+     line-height: 10px;
+     padding: 5px;
+     text-align: left;
+        margin: auto;
+        display: flex;
+      
+    }   
+    
+    #copyright{
+     color:rgb(66, 66, 66) ;
+     font-size: 14px;
+     text-align: center;
+    }
+    
+    #footerlinks_div{
+     display: flex;
+     justify-content: space-between;
+   
+    
+    }
+    .footercol{
+        display: flex;
+        flex-direction: column;
+     margin-left: 150px;
+     margin-right: 150px;
+    }
+    
+    
+    .footerlinks{
+     color: rgb(66, 66, 66);
+     text-decoration: none;
+     font-size: 17px;
+     display: grid;
+     margin-bottom: 5px;
+    
+
+    }
+    
+    .footercol_title{
+     font-size: 20px;
+     font-weight: bold;
+     margin-bottom: 10px;
+     
+    }
+   

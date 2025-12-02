@@ -1,0 +1,257 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f7f7f7;
+}
+.contact {
+    padding: 60px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    text-align: center;
+    margin-bottom: 40px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfaf6; 
+    background-image: url("../img/paws.png");
+    background-repeat: repeat;
+    background-size: 180px; 
+    background-attachment: fixed;
+}
+
+.content h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #323232;
+}
+
+.content p {
+    color: #414141;
+    font-size: 1.1rem;
+}
+
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.contact-info {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    display: flex;
+    padding: 18px 0;
+}
+
+.icon {
+    min-width: 55px;
+    height: 55px;
+    background: #cdd6ff;
+    color: #4d5d85;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.text {
+    margin-left: 20px;
+}
+
+.text h3 {
+    color: #5d5d5d;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.text p {
+    color: #797979;
+    font-size: 0.95rem;
+    margin-top: 4px;
+}
+
+.connect-title {
+    margin-top: 20px;
+    color: #5d5d5d;
+    font-size: 1.7rem;
+}
+
+.socials {
+    margin-top: 15px;
+    display: flex;
+    gap: 25px;
+}
+
+.socials li {
+    list-style: none;
+}
+
+.socials li a {
+    font-size: 1.5rem;
+    color: #7d8fb3;
+    transition: 0.3s;
+}
+
+.socials li a:hover {
+    color: #4d5d85;
+    transform: scale(1.1);
+}
+
+/* RIGHT COLUMN FORM */
+.contact-box {
+    position: relative;
+    width: 45%;
+    height: auto;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* animated border */
+.border-line {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, transparent, #cdd6ff, transparent);
+    animation: borderMove 6s linear infinite;
+}
+
+@keyframes borderMove {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.inner-box {
+    position: relative;
+    inset: 6px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+}
+
+.inner-box h3 {
+    color: #5d5d5d;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+/* FORM STYLING */
+.contact-form .input-box {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.contact-form .input-box input,
+.contact-form .input-box textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-bottom: 2px solid #cdd6ff;
+    background: transparent;
+    outline: none;
+    color: #5d5d5d;
+    font-size: 1rem;
+    resize: none;
+}
+
+.contact-form .input-box label {
+    position: absolute;
+    left: 0;
+    bottom: 12px;
+    pointer-events: none;
+    transition: 0.3s;
+    color: #858585;
+}
+
+.contact-form .input-box input:focus ~ label,
+.contact-form .input-box input:valid ~ label,
+.contact-form .input-box textarea:focus ~ label,
+.contact-form .input-box textarea:valid ~ label {
+    bottom: 40px;
+    font-size: 0.9rem;
+    color: #4d5d85;
+}
+
+/* textarea */
+.textarea textarea {
+    height: 120px;
+}
+
+/* button */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #cdd6ff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    color: #4d5d85;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #b9c5ff;
+}
+#map {
+    width: 100%;
+    height: 280px;
+    margin-top: 15px;
+    border-radius: 14px;
+    box-shadow: 0 0 10px rgba(120,120,180,0.15);
+    border: 2px solid #cdd6ff;
+    background: #eef1ff;
+}
+
+#map::after {
+    content: "🐾 Live Location";
+    position: absolute;
+    font-size: 0.9rem;
+    color: #4d5d85;
+    margin-top: -24px;
+    margin-left: 10px;
+}
+.footer {
+    margin-top: 70px;
+    width: 100%;
+    background: linear-gradient(to right, #cdd6ff, #eef1ff, #cdd6ff);
+    padding: 35px 0;
+    border-top: 4px solid #b9c5ff;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.footer-inner {
+    text-align: center;
+    color: #4d5d85;
+}
+
+.footer-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.footer-desc {
+    font-size: 1rem;
+    color: #6d6d6d;
+}

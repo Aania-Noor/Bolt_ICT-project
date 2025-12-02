@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOLT-Signup</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/login.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Login</h1>
+        <p id="error_message"></p>
+        <form id="form">
+             <div>
+                <label for="email_input"> <i class="fa-solid fa-at"></i></label>
+            <input required type="email" name="email" id="email_input" placeholder="Email">
+            </div>
+             <div>
+                <label for="password_input"><i class="fa-solid fa-lock"></i></label>
+            <input required type="password" name="password" id="password_input" placeholder="Password">
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <p class="account" >Don't have an account? <a href="signup.html">Signup</a></p>
+       <button class="back-btn1" onclick="location.href='index.html'">
+    <i class="fa-solid fa-arrow-left"></i>
+</button>
+    </div>
+    
+</body>
+</html>

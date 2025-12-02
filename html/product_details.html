@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOLT-Product Details</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/product_details.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <div id="navbar">
+        <ul id="logo">
+            <li><a href="index.html"><img src="../img/logo.jpg" alt="LOGO" height="40px" width="70px"></a></li>
+        </ul>
+        <ul id="list">
+            <li class="a"><a href="index.html" class="pages">Home</a></li>
+            <li class="a"><a href="products.html" class="pages">Products</a></li>
+            <li class="a"><a href="aboutus.html" class="pages">About Us</a></li>
+            <li class="a"><a href="contact.html" class="pages">Contact</a></li>
+        </ul>
+        <ul id="loginlink">
+            <li><a href="login.html"><img src="../img/loginicon.png" alt="" id="loginimg"></a></li>
+            <li><a href="login.html" id="login">Login</a></li>
+           
+        </ul>
+    </div>
+
+    <!-- Product Details Section -->    
+    <div id="product-details-section">
+        <div class="product-details-container">
+            <div class="product-image-section">
+                <img id="detail-product-image" src="" alt="Product Image">
+            </div>
+            
+            <div class="product-info-section">
+                <h1 id="detail-product-name">Product Name</h1>
+                <p id="detail-product-price" class="product-price">Rs.0.00</p>
+                <p id="detail-product-description" class="product-description">
+                    Loading product details...
+                </p>
+                
+                <div class="action-buttons">
+                    <button id="add-to-cart-detail" class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+<!-- Floating Cart Button -->
+<div id="floating-cart-btn">
+    🛒 <span id="cart-count">0</span>
+</div>
+<div id="cart-modal" class="modal-hidden">
+    <div class="cart-modal-content">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button id="close-cart">&times;</button>
+        </div>
+        <div id="cart-items-container">
+           
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <strong>Total: Rs.<span id="cart-total-price">0.00</span></strong>
+            </div>
+            <button id="checkout-btn" class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+</div>
+    <!-- Footer Section -->
+    <footer>
+        <div id="footertext">
+            <img src="../img/logo_no_background.png" alt="logo" id="footerlogo">
+            <p id="footeraboutus">Your one-stop shop for all pet accessories <br><br>Quality products for happy and healthy pets</p>
+        </div>
+        <div id="footerlinks_div">      
+            <div class="footercol">
+                <div class="footerinsidelinks">                         
+                    <p class="footercol_title">Useful links:</p>
+                    <a href="aboutus.html" class="footerlinks">About us</a>
+                    <a href="contact.html" class="footerlinks">Contact us</a>
+                    <a href="products.html" class="footerlinks">Products</a>
+                    <a href="login.html" class="footerlinks">Login</a>
+                    <a href="cart.html" class="footerlinks">My Cart</a>
+                </div>
+            </div>
+            <div class="footercol">
+                <div class="footerinsidelinks">
+                    <p class="footercol_title">Media Accounts:</p>
+                    <a href="https://www.facebook.com/" class="footerlinks" target="_blank">Facebook</a>
+                    <a href="https://www.instagram.com/" class="footerlinks" target="_blank">Instagram</a>
+                    <a href="https://x.com/" class="footerlinks" target="_blank">Twitter</a>
+                    <a href="https://www.linkedin.com/" class="footerlinks" target="_blank">LinkedIn</a>
+                    <a href="https://www.youtube.com/" class="footerlinks" target="_blank">Youtube</a>
+                </div>
+            </div>
+        </div>
+        <p id="copyright">Copyright © 2024 Bolt Pet Store. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/product_details.js"></script>
+   
+    <script src="../js/cart.js"></script> 
+</body>
+</html>

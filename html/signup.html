@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOLT-Signup</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/login.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Signup</h1>
+        <p id="error-message"></p>
+        <form id="form">
+            <div>
+                <label for="firstname_input"><i class="fa-solid fa-user"></i></label>
+            <input  required type="text" name="firstname" id="firstname_input" placeholder="Firstname">
+            </div>
+             <div>
+                <label for="email_input"> <i class="fa-solid fa-at"></i></label>
+            <input required type="email" name="email" id="email_input" placeholder="Email">
+            </div>
+             <div>
+                <label for="password_input"><i class="fa-solid fa-lock"></i></label>
+            <input required type="password" name="password" id="password_input" placeholder="Password">
+            </div>
+             <div>
+                <label for="repeat_password_input"><i class="fa-solid fa-lock"></i></label>
+            <input required type="password" name="repeat-oassword" id="repeat_passsword_input" placeholder="Repeat Password">
+            </div>
+            <button type="submit">Signup</button>
+        </form>
+        <p class="account" >Already have an Account? <a href="login.html">login</a></p>
+        <button class="back-btn2" onclick="history.back()">
+    <i class="fa-solid fa-arrow-left"></i>
+</button>
+    </div>
+   
+    
+</body>
+</html>
