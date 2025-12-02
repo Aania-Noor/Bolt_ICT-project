@@ -25,7 +25,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fdfaf6; 
-    background-image: url("img/paws.png");
+    background-image: url("../img/paws.png");
     background-repeat: repeat;
     background-size: 180px; 
     background-attachment: fixed;

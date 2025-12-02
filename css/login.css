@@ -16,7 +16,7 @@ html{
 }
 body{
     min-height: 100vh;
-    background-image: url(img/loginimg.jpg);
+    background-image: url(../img/loginimg.jpg);
     background-size: 800px;
     background-position: right;
     overflow: hidden;
@@ -24,7 +24,7 @@ body{
 }
 .wrapper{
     box-sizing: border-box;
-    background-image: url(img/loginpattern.avif) ;
+    background-image: url(../img/loginpattern.avif) ;
     background-size: 360px;
     height: 100vh;
     width: max(50%, 600px);
