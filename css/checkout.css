@@ -11,7 +11,7 @@ body {
     
     background: 
         linear-gradient(rgba(255, 232, 214, 0.9), rgba(224, 247, 244, 0.9)),
-        url('../img/pawsCheckout.png') no-repeat center center fixed;
+        url('img/pawsCheckout.png') no-repeat center center fixed;
     
     background-size: cover;
     padding: 20px;
